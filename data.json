@@ -96,5 +96,31 @@
       "data": "Dom",
       "valorBruto": 1750
     }
+  ],
+  "pagamentosPorSemana": [
+    {
+      "semana": "Semana 1",
+      "pix": 100,
+      "credito": 250,
+      "debito": 70
+    },
+    {
+      "semana": "Semana 2",
+      "pix": 150,
+      "credito": 280,
+      "debito": 90
+    },
+    {
+      "semana": "Semana 3",
+      "pix": 200,
+      "credito": 320,
+      "debito": 110
+    },
+    {
+      "semana": "Semana 4",
+      "pix": 180,
+      "credito": 300,
+      "debito": 100
+    }
   ]
 }
