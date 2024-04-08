@@ -1,0 +1,100 @@
+{
+  "receitaMensal": [
+    {
+      "mes": "Jan",
+      "receita": 10000
+    },
+    {
+      "mes": "Fev",
+      "receita": 15000
+    },
+    {
+      "mes": "Mar",
+      "receita": 20000
+    },
+    {
+      "mes": "Abr",
+      "receita": 25000
+    },
+    {
+      "mes": "Mai",
+      "receita": 30000
+    },
+    {
+      "mes": "Jun",
+      "receita": 15000
+    },
+    {
+      "mes": "Jul",
+      "receita": 10000
+    },
+    {
+      "mes": "Ago",
+      "receita": 25000
+    },
+    {
+      "mes": "Set",
+      "receita": 20000
+    },
+    {
+      "mes": "Out",
+      "receita": 35000
+    },
+    {
+      "mes": "Nov",
+      "receita": 20000
+    },
+    {
+      "mes": "Dez",
+      "receita": 35000
+    }
+  ],
+  "receitaTrimestral": [
+    {
+      "trimestre": "1",
+      "receita": 45000
+    },
+    {
+      "trimestre": "2",
+      "receita": 75000
+    },
+    {
+      "trimestre": "3",
+      "receita": 70000
+    },
+    {
+      "trimestre": "4",
+      "receita": 90000
+    }
+  ],
+  "movimentacoesSemanal": [
+    {
+      "data": "Seg",
+      "valorBruto": 2000
+    },
+    {
+      "data": "Ter",
+      "valorBruto": 1500
+    },
+    {
+      "data": "Qua",
+      "valorBruto": 2000
+    },
+    {
+      "data": "Qui",
+      "valorBruto": 2500
+    },
+    {
+      "data": "Sex",
+      "valorBruto": 3500
+    },
+    {
+      "data": "Sáb",
+      "valorBruto": 2500
+    },
+    {
+      "data": "Dom",
+      "valorBruto": 1750
+    }
+  ]
+}
