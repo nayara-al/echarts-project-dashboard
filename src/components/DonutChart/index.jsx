@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import * as echarts from "echarts";
 
 export default function GraficoDonut() {
@@ -7,7 +7,7 @@ export default function GraficoDonut() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3001/receitaTrimestral");
+        const response = await fetch("http://localhost:3333/receitaTrimestral");
         const data = await response.json();
         renderChart(data);
       } catch (error) {
@@ -85,9 +85,9 @@ export default function GraficoDonut() {
   };
 
   return (
-    <>
+    <div>
       <h1>Gráfico Donut</h1>
-      <div ref={chartRef} style={{ width: "100%", height: "500px" }}></div>;
-    </>
+      <div ref={chartRef} style={{ width: "600px", height: "500px" }}></div>
+    </div>
   );
 }

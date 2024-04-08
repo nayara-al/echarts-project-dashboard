@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import * as echarts from 'echarts';
 
 export default function GraficoBarra() {
@@ -7,7 +7,7 @@ export default function GraficoBarra() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3001/receitaMensal');
+        const response = await fetch('http://localhost:3333/receitaMensal');
         const data = await response.json();
         renderChart(data);
       } catch (error) {
@@ -50,9 +50,9 @@ export default function GraficoBarra() {
   };
 
   return (
-    <>
+    <div>
       <h1>Gráfgico em Barras</h1>
       <div ref={chartRef} style={{ width: '720px', height: '400px' }}></div>
-    </>
+    </div>
   );
 }

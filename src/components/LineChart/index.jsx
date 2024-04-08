@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import * as echarts from "echarts";
 
 export default function GraficoLinha() {
@@ -8,7 +8,7 @@ export default function GraficoLinha() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "http://localhost:3001/movimentacoesSemanal"
+          "http://localhost:3333/movimentacoesSemanal"
         );
         const data = await response.json();
         renderChart(data);
