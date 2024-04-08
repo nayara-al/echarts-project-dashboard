@@ -2,6 +2,7 @@ import GraficoBarra from "./components/GraficoBarra";
 import GraficoDonut from "./components/DonutChart";
 import GraficoLinha from "./components/LineChart";
 import ContainerFlex from "./components/ContainerFlex";
+import BarLabel from "./components/BarLabel";
 function App() {
   return (
     <>
@@ -9,6 +10,7 @@ function App() {
         <GraficoBarra />
         <GraficoDonut />
         <GraficoLinha />
+        <BarLabel />
       </ContainerFlex>
     </>
   );
