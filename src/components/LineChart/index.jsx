@@ -1,23 +1,12 @@
 import { useEffect, useRef } from "react";
 import * as echarts from "echarts";
+import data from "../../../data.json";
 
 export default function GraficoLinha() {
   const chartRef = useRef(null);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          "http://localhost:3333/movimentacoesSemanal"
-        );
-        const data = await response.json();
-        renderChart(data);
-      } catch (error) {
-        console.error("Erro ao buscar dados:", error);
-      }
-    };
-
-    fetchData();
+    renderChart(data.movimentacoesSemanal);
   }, []);
 
   const renderChart = (data) => {

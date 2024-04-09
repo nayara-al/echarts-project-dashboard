@@ -1,21 +1,12 @@
 import { useEffect, useRef } from "react";
 import * as echarts from "echarts";
+import data from "../../../data.json"
 
 export default function GraficoBarra() {
   const chartRef = useRef(null);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("http://localhost:3333/receitaMensal");
-        const data = await response.json();
-        renderChart(data);
-      } catch (error) {
-        console.error("Erroo ao buscar dados:", error);
-      }
-    };
-
-    fetchData();
+    renderChart(data.receitaMensal)
   }, [chartRef]);
 
   const renderChart = (data) => {
